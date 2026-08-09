@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏠 Hermes Home Automation
+# Hermes Home Automation
 
 **Assistente IA residencial** — controle de ar-condicionado, monitor de rede e automação de presença em um único dashboard web.
 
@@ -13,19 +13,19 @@
 
 </div>
 
-## 📖 Sobre
+## Sobre
 
-O **Hermes Home Automation** é um assistente IA residencial que centraliza o controle dos dispositivos inteligentes da casa em uma única plataforma. Com uma API leve e rápida construída em FastAPI e um dashboard moderno em React, ele integra o controle do ar-condicionado LG ThinQ, o monitoramento dos dispositivos conectados à rede local e automações baseadas na presença dos moradores.
+Esse é o meu projeto de automação residencial: um assistente de IA que junta o controle dos dispositivos inteligentes da minha casa em um lugar só, sem precisar ficar abrindo um app diferente pra cada coisa. A API é feita com FastAPI (leve e rápida) e o dashboard com React, e ele cuida de três coisas principais: o controle do ar-condicionado LG ThinQ, o monitoramento dos dispositivos conectados na rede local e automações baseadas na presença dos moradores.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- ❄️ **Controle de ar-condicionado (LG ThinQ)** — ligar/desligar, ajuste de temperatura, modos de operação, velocidade do ventilador e Jet Mode.
-- 📡 **Monitor de rede local** — detecta dispositivos conectados, identifica quem está em casa e alerta sobre novos dispositivos.
-- 🚪 **Automação de presença** — regras automáticas acionadas pela presença ou ausência dos moradores.
-- 📊 **Dashboard web** — interface responsiva e em tempo real (WebSockets) construída com React.
-- 🩺 **Health check integrado** — endpoint `/health` para monitoramento e orquestração com Docker.
+- **Controle de ar-condicionado (LG ThinQ)** — ligar/desligar, ajuste de temperatura, modos de operação, velocidade do ventilador e Jet Mode.
+- **Monitor de rede local** — detecta os dispositivos conectados, identifica quem está em casa e alerta quando aparece um dispositivo novo.
+- **Automação de presença** — regras automáticas acionadas pela presença ou ausência dos moradores.
+- **Dashboard web** — interface responsiva com atualizações em tempo real (WebSockets) construída com React.
+- **Health check integrado** — endpoint `/health` pra monitorar o serviço e orquestrar com o Docker.
 
-## 🧰 Stack tecnológica
+## Stack tecnológica
 
 | Camada            | Tecnologia                                          |
 | ----------------- | --------------------------------------------------- |
@@ -34,7 +34,7 @@ O **Hermes Home Automation** é um assistente IA residencial que centraliza o co
 | Integrações       | LG ThinQ (ar-condicionado), aiohttp, scan de rede   |
 | Infraestrutura    | Docker, Docker Compose                              |
 
-## 🚀 Como executar
+## Como executar
 
 ### Pré-requisitos
 
@@ -63,7 +63,7 @@ cp .env.example .env
 uvicorn src.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-Acesse a documentação interativa da API em **http://localhost:8000/docs**.
+A documentação interativa da API fica em **http://localhost:8000/docs**.
 
 ### Com Docker
 
@@ -71,7 +71,7 @@ Acesse a documentação interativa da API em **http://localhost:8000/docs**.
 docker compose up --build
 ```
 
-## 📁 Estrutura do projeto
+## Estrutura do projeto
 
 ```
 hermes-home-automation/
@@ -85,11 +85,11 @@ hermes-home-automation/
 └── README.md
 ```
 
-## 🖼️ Screenshots
+## Screenshots
 
-> Em breve — capturas de tela do dashboard, do painel de controle do ar-condicionado e do monitor de rede.
+> Em breve — vou colocar capturas de tela do dashboard, do painel de controle do ar-condicionado e do monitor de rede.
 
-## 🗺️ Roadmap
+## Roadmap
 
 - [x] Estrutura inicial do projeto (FastAPI + health check)
 - [ ] Integração com LG ThinQ (controle do ar-condicionado)
@@ -99,10 +99,10 @@ hermes-home-automation/
 - [ ] Docker Compose completo (API + frontend)
 - [ ] Autenticação e controle de acesso
 
-## 🤝 Contribuindo
+## Contribuindo
 
-Contribuições são bem-vindas! Abra uma *issue* para discutir mudanças ou envie um *pull request* com melhorias. Consulte o roadmap acima para saber onde ajudar.
+Curte a ideia? Contribuições são bem-vindas. Abre uma *issue* pra gente discutir a mudança ou manda um *pull request* com melhorias. Dá uma olhada no roadmap pra ver onde dá pra ajudar.
 
-## 📄 Licença
+## Licença
 
-Distribuído sob a licença **MIT**. Veja o arquivo `LICENSE` para mais detalhes.
+Distribuído sob a licença **MIT**. Mais detalhes no arquivo `LICENSE`.
