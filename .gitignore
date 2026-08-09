@@ -1,0 +1,37 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# ── Ambiente ────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Node / Frontend ─────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ── IDE / Editores ──────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Sistema ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Logs e artefatos de teste ───────────────────────────
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
